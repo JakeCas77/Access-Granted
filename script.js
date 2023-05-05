@@ -34,7 +34,7 @@ function generatePassword() {
   var password = "";
   var randomIndex;
 
-
+// Initially started with just a random index code. But per my TAs suggestion I made it more specific to guarantee inclusion of all characters each time it was generated
   if (mustInclude.lowerCase) {
     randomIndex = Math.floor(Math.random() * lowerCaseArr.length);
     password += lowerCaseArr[randomIndex];
